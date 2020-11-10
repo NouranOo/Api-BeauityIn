@@ -1,0 +1,917 @@
+{
+	"info": {
+		"_postman_id": "93a8313c-2b8c-4c2a-8a4d-baaff3f1c7df",
+		"name": "Beauty_in",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nouranhossam@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "dfvDZfxfsdb",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "ApiToken",
+							"value": "ZjNNd0xQRm5VZHJERWdRc1FEZ2VhdkxtbXlUNzJkOUozc0RVWnpkOQ==",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8002/Api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"Api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nouran@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "coffee",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "egypt",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01228834332",
+							"type": "text"
+						},
+						{
+							"key": "confirm_phone",
+							"value": "01228834332",
+							"type": "text"
+						},
+						{
+							"key": "user_type",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "dfvDZfxfsdb",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/register?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "dodo@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"disabled": true
+						},
+						{
+							"key": "confirm_password",
+							"value": "11111111",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "dodo",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "Eqypt",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "01228429327",
+							"disabled": true
+						},
+						{
+							"key": "confirm_phone",
+							"value": "01228429327",
+							"disabled": true
+						},
+						{
+							"key": "user_type",
+							"value": "Female",
+							"disabled": true
+						},
+						{
+							"key": "Token",
+							"value": "ljhgjfvhjb",
+							"disabled": true
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "bExNS1o2Vm5Pd2JJZWYyUHFPU0JPY2ljZzhRRmFnWG9VMW9idU50dQ==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register_Provider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nouran@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "012222222",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "full_name",
+							"value": "Nourano",
+							"type": "text"
+						},
+						{
+							"key": "place_name",
+							"value": "Coffee",
+							"type": "text"
+						},
+						{
+							"key": "place_logo",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "lang",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "late",
+							"value": "21",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "dcsd",
+							"type": "text"
+						},
+						{
+							"key": "link_insta",
+							"value": "nn@inta",
+							"type": "text"
+						},
+						{
+							"key": "link_twitter",
+							"value": "nn@twitter",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "cvdzv x",
+							"type": "text"
+						},
+						{
+							"key": "other_information",
+							"value": "xz zxvxz",
+							"type": "text"
+						},
+						{
+							"key": "home_service",
+							"value": "no",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "sfagsdgbsrfb",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/provider/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"provider",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login_provider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nouran@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "sfagsdgbsrfb",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/provider/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"provider",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout_Provider",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "RDc1UGJBaHE0cmhvYkdqcDdnS2VSOUxtVVNqMHQwNGc1c0VIT2c2UA==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/provider/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"provider",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showServices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "ApiToken",
+							"value": "ZGE0NkVnMER6U0lqeHhXZGRZVjZDU1dFVUc5ZzhqUlNkdmZPM3lRWg==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8002/Api/user/showServices",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"Api",
+						"user",
+						"showServices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " My orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "U3FmbzE1QTRWQjVWOU1EajM4RW5HajR2Q2hsRVo2dXBYQTdCMUJXVw==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/MyOrders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"MyOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyFavorits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "NnZvcXh2Qm9Qblhvc0JYeElZMkh4NXNGSVJGZ2pwZ2xsZkFGTXBuag==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/MyFavorits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"MyFavorits"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Make Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "U3FmbzE1QTRWQjVWOU1EajM4RW5HajR2Q2hsRVo2dXBYQTdCMUJXVw==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "provider_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "day",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "number_people",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "sub_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/requestorder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"requestorder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddToFavorit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "NnZvcXh2Qm9Qblhvc0JYeElZMkh4NXNGSVJGZ2pwZ2xsZkFGTXBuag==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "provider_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/AddToFavorite?=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"AddToFavorite"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " updateprofile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "nouran@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "11111111",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "coffe",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "01228333333",
+							"type": "text"
+						},
+						{
+							"key": "confirm_phone",
+							"value": "01228",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "user_type",
+							"value": "female",
+							"type": "text"
+						},
+						{
+							"key": "Token",
+							"value": "dfvDZfxfsdb",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": ""
+						},
+						{
+							"key": "late",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lang",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "fb_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "go_id",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tw_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "ApiToken",
+							"value": "NnZvcXh2Qm9Qblhvc0JYeElZMkh4NXNGSVJGZ2pwZ2xsZkFGTXBuag==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/updateprofile?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"updateprofile"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "dodo@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "11111111",
+							"disabled": true
+						},
+						{
+							"key": "confirm_password",
+							"value": "11111111",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "dodo",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "Eqypt",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "01228429327",
+							"disabled": true
+						},
+						{
+							"key": "confirm_phone",
+							"value": "01228429327",
+							"disabled": true
+						},
+						{
+							"key": "user_type",
+							"value": "Female",
+							"disabled": true
+						},
+						{
+							"key": "Token",
+							"value": "ljhgjfvhjb",
+							"disabled": true
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteFromFavorite",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ApiToken",
+							"value": "NnZvcXh2Qm9Qblhvc0JYeElZMkh4NXNGSVJGZ2pwZ2xsZkFGTXBuag==",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "provider_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/Api/user/DeleteFromFavorite",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"Api",
+						"user",
+						"DeleteFromFavorite"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showProviders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "service_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "city_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "apiKey",
+							"value": "9BIS03SAge5kQkKDgNDFB3QHh5mEsasX",
+							"type": "text"
+						},
+						{
+							"key": "ApiToken",
+							"value": "anNpQVgwSGs5VFJzNTdWMzlEQ0d6emVBRDRaV2lGTlZTZGd1eGhwRA==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8002/Api/user/showProviders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"Api",
+						"user",
+						"showProviders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
